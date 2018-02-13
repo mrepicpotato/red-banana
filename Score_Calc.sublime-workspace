@@ -101,6 +101,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/csmith/Desktop/Projects/Score Calc/student_info.h",
+		"/C/Users/csmith/Desktop/Projects/Score Calc/student_info.cpp",
+		"/C/Users/csmith/Desktop/Projects/Score Calc/grade.h",
 		"/C/Users/csmith/Desktop/Projects/Score Calc/main.cpp",
 		"/D/Users/csmith/Documents/Visual Studio 2017/Score Calc/student_info.cpp",
 		"/C/Users/csmith/AppData/Roaming/Sublime Text 3/Packages/User/C++ Build.sublime-build",
@@ -225,10 +228,7 @@
 		"/C/Users/csmith/Desktop/CCTV Folder.txt",
 		"/Z/wwwroot/staticscreens/9.admin_mtd_wp.asp",
 		"/Z/wwwroot/staticscreens/9.admin_mtd.asp",
-		"//10.0.0.5/s$/inetpub/wwwroot/module_accounts/oneyearexporttocsv.asp",
-		"//10.0.0.5/s$/inetpub/wwwroot/module_accounts/exporttocsv_noseconds.asp",
-		"//10.0.0.5/s$/inetpub/wwwroot/rules/factfindv2.asp",
-		"/C/Users/csmith/AppData/Local/Temp/scp46470/var/www/cwd/updaterates/main.php"
+		"//10.0.0.5/s$/inetpub/wwwroot/module_accounts/oneyearexporttocsv.asp"
 	],
 	"find":
 	{
