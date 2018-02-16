@@ -10,22 +10,18 @@
 #include "grade.h"
 #include "student_info.h"
 
-using std::cin;				using std::sort;
-using std::cout;			using std::streamsize;
-using std::endl;			using std::string;
-using std::setprecision;	using std::vector;
-using std::domain_error;	using std::max;
+using namespace std;
 
 vector<Student_info> extract_fails(vector<Student_info>& students){
-	vector<Student_info>::size_type fail;
-	vector<Student_info>::size_type i = 0;
+	vector<Student_info> fail;
+	vector<Student_info>::iterator iter = students.begin();
 
-	while (i != students.size()){
-		if (fgrade(students[i])){
-			fail.push_back(students[i]);
-			students.erase(students.begin() + i);
+	while (iter != students.end()){
+		if (fgrade(*iter)){
+			fail.push_back(*iter);
+			iter = students.erase(iter);
 		} else {
-			++i;
+			++iter;
 		}
 	}
 	return fail;
