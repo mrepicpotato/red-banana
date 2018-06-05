@@ -29,7 +29,8 @@ list<Student_info> extract_fails(list<Student_info>& students){
 }
 
 int main() {
-	vector<Student_info> students;
+	list<Student_info> students;
+	list<Student_info>::iterator iter = students.begin();
 	Student_info record;
 	string::size_type maxlen = 0;
 
@@ -38,12 +39,12 @@ int main() {
 		students.push_back(record);
 	}
 
-	sort(students.begin(), students.end(), compare);
+	students.sort(compare);
 	cout << "Students Scores:" << endl;
-	for (vector<Student_info>::size_type i = 0; i != students.size(); ++i) {
-		cout << students[i].name << string(maxlen + 1 - students[i].name.size(), ' ');
+	for (iter = students.begin(); iter != students.end(); ++iter) {
+		cout << iter->name << string(maxlen + 1 - iter->name.size(), ' ');
 		try {
-			double final_grade = grade(students[i]);
+			double final_grade = grade(*iter);
 			streamsize prec = cout.precision();
 			cout << setprecision(3) << final_grade << setprecision(prec);
 		}

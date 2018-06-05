@@ -8,15 +8,18 @@ bool compare(const Student_info& x, const Student_info& y) {
 }
 
 istream& read(istream& is, Student_info& s) {
-	cout << "Student's name: ";
+	cout << "Student's name: " << endl;
 	getline(is, s.name);
 	if (!is.eof()) {
-		cout << endl << s.name << "'s midterm grade: ";
+		cout << endl << s.name << "'s midterm grade: " << endl;
 		is >> s.midterm;
-		cout << endl << s.name << "'s final grade: ";
+		cout << endl << s.name << "'s final grade: " << endl;
 		is >> s.final;
-		cout << endl << s.name << "'s homework grades (-1 to finish): ";
+		cout << endl << s.name << "'s homework grades (-1 to finish): " << endl;
 		read_hw(is, s.homework);
+		system("clear");
+	} else {
+		system("clear");
 	}
 	return is;
 }
