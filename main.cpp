@@ -13,7 +13,7 @@
 
 using namespace std;
 
-list<Student_info> extract_fails(list<Student_info>& students){
+	list<Student_info> extract_fails(list<Student_info>& students){
 	list<Student_info> fail;
 	list<Student_info>::iterator iter = students.begin();
 
