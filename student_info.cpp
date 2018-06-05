@@ -17,9 +17,6 @@ istream& read(istream& is, Student_info& s) {
 		is >> s.final;
 		cout << endl << s.name << "'s homework grades (-1 to finish): " << endl;
 		read_hw(is, s.homework);
-		system("clear");
-	} else {
-		system("clear");
 	}
 	return is;
 }

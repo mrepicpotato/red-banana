@@ -22,6 +22,7 @@ int main() {
 	while (read(cin, record)) {
 		maxlen = max(maxlen, record.name.size());
 		students.push_back(record);
+		system("clear");
 	}
 
 	students.sort(compare);
