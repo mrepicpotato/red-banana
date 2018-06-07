@@ -26,7 +26,7 @@ int main() {
 	}
 
 	students.sort(compare);
-	cout << "Students Scores :" << endl;
+	cout << "Students Scores:" << endl;
 	for (iter = students.begin(); iter != students.end(); ++iter) {
 		cout << iter->name << string(maxlen + 1 - iter->name.size(), ' ');
 		try {
